@@ -1,0 +1,28 @@
+body {
+  padding: 5;
+  margin: 5;
+}
+
+#map,
+
+body,
+
+html {
+  height: 100%;
+}
+
+.legend {
+  padding: 10px;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.836);
+  border-radius: 7px;
+}
+
+.legend i {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  opacity: .75;
+}

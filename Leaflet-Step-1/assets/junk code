@@ -1,0 +1,33 @@
+this file contains code chunks that I was attempting to use and removed for the sake of trouble shooting
+
+//now that the layers and overlays are made now I need the icons
+//var cautionIcon = L.Icon.extend({
+    //options: {
+       // iconSize:     [38, 95],
+      //  shadowSize:   [50, 64],
+       // iconAnchor:   [22, 94],
+       // shadowAnchor: [4, 62],
+       // popupAnchor:  [-3, -76]
+   // }
+//});
+
+//var redIcon = new cautionIcon({iconUrl: 'red.png'}),
+//yellowIcon = new cautionIcon({iconUrl: 'yellow.png'})
+
+var overlays={
+    "Major Earthquakes":layers.Major,
+    "Minor Earthquakes":layers.Minor,
+    "All Earthquakes":layers.All
+};
+
+//layer control
+L.controls.layers(null,overlays).addTo(myMap);  //its not real until you addTo(map)
+
+};
+
+info.addTo(myMap);  //its not real until you addTo(map)
+
+    var redIcon = new cautionIcon({iconUrl: 'assets/red.png'});
+    L.marker([51.5, -0.09], {icon: redIcon}).addTo(map);
+    var yellowIcon = new cautionIcon({iconUrl: 'assets/yellow.png'});
+    L.marker([51.5, -0.09], {icon: yellowIcon}).addTo(map);
